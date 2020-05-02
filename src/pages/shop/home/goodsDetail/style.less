@@ -1,0 +1,92 @@
+.detail{
+  font-size: 14px;
+  padding-bottom: 50px;
+  .conWrap{
+    padding: 8px 10px;
+  }
+  .detailWrap{
+    img{
+      max-width: 100%;;
+    }
+  }
+  .price{
+    color: #f97003;
+    font-size: 22px;
+  }
+  .name{
+    font-size: 14px;
+  }
+  .baseInfo{
+    display: flex;
+    text-align: center;
+    font-size: 10px;
+    color: #bbb;
+    div{
+      flex: 1;
+      &:first-child{
+        text-align: left;
+      }
+      &:last-child{
+        text-align: right;
+      }
+    }
+  }
+  .seldInfo{
+    border: none;
+    margin:15px 0;
+    .seldInfoItem{
+      background: #f8f8f8;
+    }
+  }
+  .buyBtn{
+    border-radius: 0;
+    position: fixed !important;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+.proGg{
+  max-height: 500px;
+  overflow: scroll;
+  .seldInfo{
+    margin-top: 30px;
+    overflow: hidden;
+    .seldImg{
+      max-width: 150px;
+      margin-right: 10px;
+      img{
+        width: 100%;
+      }
+    }
+    div{
+      float: left;
+      text-align: left;
+    }
+    .seldTxt{
+      font-size: 12px;
+      b{
+        color: #f97003;
+        font-size: 16Px;
+      }
+      p{
+        color: #555;
+      }
+      span{
+        color: #999;
+      }
+    }
+  }
+  .selDesc{
+    font-size: 12Px;
+    color: #888;
+  }
+  padding-bottom: 70px;
+  .innerBuyBtn{
+    position: fixed !important;
+    width: 346px;
+    bottom: 10px;
+    z-index: 2;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
+  }
+}

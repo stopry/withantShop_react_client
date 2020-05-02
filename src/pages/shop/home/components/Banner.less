@@ -1,0 +1,112 @@
+.bannerWrap{
+  width: 100%;
+  .bannerImg{
+    width: 100%;;
+    height: auto;
+    border-radius: 7px;
+  }
+  .bannerBg{
+    filter: blur(5px);
+    width: 100%;
+    position: absolute;
+  }
+  .fade{
+    animation: fadeIn 500ms linear;
+  }
+  .logo{
+    position: relative;
+    z-index: 2;
+    width: 80px;
+    padding: 15px 0 5px 15px;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+@keyframes fadeIn{
+  0%{opacity: 0.2;}
+  100%{opacity: 1;}
+}
+
+.proInfo{
+  padding: 2px 16px;
+  background: #fff;
+  box-shadow: 0 0 12px 0 rgba(0,0,0,.08);
+  border-radius: 5px;
+  width: 92%;
+  left: 4%;
+  z-index: 2;
+  bottom: 20px;
+  position: absolute;
+  .proName{
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 40px;
+    color:#000;
+  }
+  .proTitle{
+    font-weight: bold;
+    font-size: 18px;
+    color:#333;
+    line-height: 28px;
+    padding-top: 5px;
+  }
+  .proDesc{
+    color:#333;
+    font-size: 12Px;
+    line-height: 26px;
+    padding-bottom: 5px;
+    b{
+      font-weight: 900;
+      color: #000;
+      font-size:16Px;
+      display: inline-block;
+      overflow: hidden;
+      height: 16Px;
+      padding-right: 3Px;
+    }
+  }
+}
+
+//new title
+.newTitle{
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  width: 92%;
+  margin: 0 auto;
+  .titleCell{
+    float: left;
+    font-size: 18Px;
+  }
+  .title{
+    color: #000;
+    font-weight: bold;
+  }
+  .subTitle{
+    color: #ccc;
+    font-size: 16Px;
+    position: relative;
+    left: -3px;
+    b{
+      font-size: 14Px;
+      font-weight: normal;
+      padding: 0 3px;
+      // color: #555;
+    }
+  }
+  .moreStr{
+    position: relative;
+    right: -6px;
+    font-size: 12Px;
+    color: #999;
+    text-align: right;
+    float: right;
+    ._icon{
+      position: relative;
+      top: 4.5px;
+      left: -4Px; 
+    }
+  }
+}

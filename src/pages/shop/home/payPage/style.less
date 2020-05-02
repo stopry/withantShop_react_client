@@ -1,0 +1,87 @@
+@import '../../thems.less';
+.payPage{
+  position: relative;
+  min-height: 100vh;
+  background: #f8f8f8;
+  .proImg{
+    width: 20%;
+    float: left;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .proDesc{
+    text-align: left;
+    width: 76%;
+    float: right;
+    .descText{
+      white-space: normal;
+      font-size: 14Px;
+    }
+    .sizeInfo{
+      font-size: 12Px;
+      color: #999;
+    }
+    p{
+      margin-bottom: 4Px;
+    }
+    .priInfo{
+      color: @priColor;
+      font-size: 16Px;
+    }
+  }
+  .payBot{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background: #fff;
+    div{
+      float: left;
+    }
+    .priDesc{
+      padding: 6px 0;
+      width: 60%;
+      text-align: right;
+      padding-right: 8px;
+      font-size: 12px;
+      p{
+        margin-bottom: 0;
+      }
+      span{
+        color: #f97003;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+    .payBtn{
+      border-radius: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: 40%;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      vertical-align:middle;
+      background-color: @priColor;
+      span{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  .tips{
+    position: absolute;
+    left: 0;
+    bottom: 52px;
+    width: 100%;
+  }
+}

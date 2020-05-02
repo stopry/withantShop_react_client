@@ -1,0 +1,231 @@
+/* reset */
+@import "//at.alicdn.com/t/font_1522580_ogexq27myk.css";
+
+//聚划算图标
+@import "//at.alicdn.com/t/font_171966_ns0cqi0kds.css";
+html {
+  -webkit-text-size-adjust: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  font-family: Helvetica;
+}
+
+body,
+button, input, select, textarea {
+  font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+}
+body, button, input, select, textarea {
+    font-family: microsoft yahei;
+}
+address, cite, dfn, em, var, i {
+  font-style: normal;
+}
+
+/* 将斜体扶正 */
+code, kbd, pre, samp {
+  font-family: courier new, courier, monospace;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dd,
+ul,
+ol,
+pre,
+form,
+input,
+textarea,
+th,
+td,
+select {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  text-indent: 0;
+}
+
+a,
+button,
+input,
+textarea,
+select {
+  background: none;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  outline: none;
+  -webkit-appearance: none;
+}
+
+em {
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+  vertical-align: top;
+  -ms-interpolation-mode: bicubic;
+}
+
+// img,a{blr:expression(this.onFocus=this.blur());}
+
+.overDot{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+a:focus{
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+a:active,
+a:hover {
+  outline: 0;
+  text-decoration: none;
+}
+/* end reset */
+
+html,
+body {
+  max-width: 540px;
+  min-width: 320px;
+  margin: auto;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* iphonex 兼容方案
+https://aotu.io/notes/2017/11/27/iphonex/index.html */
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* iphonex 安全区域 */
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #fff !important;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* iphonex fix底部元素适配 */
+:global(.fixed_bottom) {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+  position: fixed;
+  z-index: 10;
+  background-color: #fff;
+}
+
+:global(.clearfix:after) {
+  content: '';
+  display: table;
+  clear: both;
+}
+//style
+button,a{
+  &:focus{
+    opacity: 0.89;
+    box-shadow: 0 0 2px 4px rgba(0,0,0,0.2);
+  }
+  cursor: pointer;
+}
+
+/*元素细边框s*/
+.s_border {
+  position: relative;
+}
+
+.s_border::after {
+  content: ' ';
+  position: absolute;
+  pointer-events: none;
+  box-sizing: border-box;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  border-bottom: 1px solid #eee;
+}
+
+.s_border_top {
+  position: relative;
+}
+
+.s_border_top::after {
+  content: ' ';
+  position: absolute;
+  pointer-events: none;
+  box-sizing: border-box;
+  left: 0;
+  right: 0;
+  top: 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  border-top: 1px solid #ddd;
+}
+a{
+  color: #99D900;
+}
+/*元素细边框e*/
+

@@ -1,0 +1,41 @@
+:global{
+  #shop_nav_bar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background: #ffffff;
+    height: 46px;
+    display: flex;
+    z-index:2;
+    a{
+      flex: 1;
+      text-align: center;
+      color: #222222;
+      img{
+        width: 26px;
+        margin: 4px 0 2px 0;
+        &.iconImgActive{
+          display: none;
+        }
+      }
+      &.iconfont{
+        font-size: 20px;
+      }
+      &.active{
+        box-shadow: none !important;
+        color: @brand-primary;
+        img.iconImgActive{
+          display: inline;
+        }
+        img.iconImg{
+          display: none;
+        }
+      }
+      div{
+        margin-top: -5px;
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+:global{
+  #navBar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background: #000000;
+    height: 46px;
+    display: flex;
+    z-index:2;
+    a{
+      flex: 1;
+      text-align: center;
+      color: #383838;
+      &.iconfont{
+        font-size: 20px;
+      }
+      &.active{
+        color: @brand-primary;
+      }
+      p{
+        margin-top: -5px;
+        font-size: 12px;
+      }
+    }
+  }
+}
