@@ -1,4 +1,4 @@
-import { queryUser,queryAddressList,queryOrder } from '@/services/my';
+import { queryUser,queryAddressList,queryOrder,queryOrderCount } from '@/services/my';
 
 export default {
   namespace:'my',
@@ -29,6 +29,10 @@ export default {
         callback&&callback(response);
       }
       console.log(response,777)
+    },
+    //获取全部订单数量
+    *fetchOrderCount({payload}:any,{call}:any){
+      yield call(queryOrderCount,payload)
     },
     *fetchOrder({payload,callback}:any,{call,put,select}:any){
       const response = yield call(queryOrder,payload);

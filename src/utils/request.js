@@ -81,7 +81,7 @@ export default function request(url, option,auth=false) {
   const defaultOptions = {
     credentials: 'include',
   };
-  
+
   const newOptions = { ...defaultOptions, ...options };
   if (
     newOptions.method === 'POST' ||
@@ -104,7 +104,7 @@ export default function request(url, option,auth=false) {
     }
   }
 
-  const expirys = options.expirys && 60;
+  const expirys = options.expirys && 0;//请求缓存的时间（2）//默认设置0s，就是不缓存请求，若缓存请求时间，请求在缓存的时间内只能请求一次，这是个坑坑了我，可在特定的接口地址设置缓存时间以减少重复请求
   // options.expirys !== false, return the cache,
   if (options.expirys !== false) {
     const cached = sessionStorage.getItem(hashcode);

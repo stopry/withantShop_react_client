@@ -1,19 +1,23 @@
 import React from 'react';
 import { connect ,useDispatch} from 'dva';
-import {List,NavBar,Icon,Button,Tabs,WhiteSpace} from 'antd-mobile';
+import {List,NavBar,Icon,Button,Tabs,WhiteSpace,Modal,Toast} from 'antd-mobile';
 import OrderCard from './orderCard';
 import NoData from '@/components/shop/noData';
+import {deleteOrder} from "@/services/my";
+import router from 'umi/router';
 
 
 const styles = require('../styles.less');
 
 const Orders:React.FC<any> = props=>{
 
+  const [orderStatus,setOrderStatus] = React.useState(0);
+
   const {orderList} = props;
 
   const dispatch = useDispatch();
 
-  const [orderStatus,setOrderStatus] = React.useState(0);
+
   const [orderLists,setOrderLists] = React.useState(orderList);
 
 
@@ -22,22 +26,27 @@ const Orders:React.FC<any> = props=>{
     getOrder({orderStatus});
   },[]);
 
+  React.useEffect(()=>{
+    setTimeout(()=>{
+      filterOrders(0);
+    },0)
+  },[orderList]);
 
-  console.log(orderList,'订单列表');
 
   const getOrder = (payload:any) =>{
-
     dispatch({
       type:'my/fetchOrder',
       payload,
       callback:(res:any)=>{
         setOrderLists(res.data);
+        filterOrders(orderStatus);
         // 订单
       }
     })
   };
   //过滤订单
   const filterOrders = (orderStatus:number)=>{
+    setOrderStatus(orderStatus);
     if(orderStatus!==0){
       const res = orderList.filter((val:any)=>{
         return val.status === orderStatus;
@@ -46,6 +55,36 @@ const Orders:React.FC<any> = props=>{
     }else{
       setOrderLists(orderList);
     }
+  };
+
+  const alert = Modal.alert;
+
+  //删除订单
+  const deleteHandler = (payload:any)=>{
+    alert(
+      '是否删除',
+      '确认删除订单吗？',
+      [
+        {
+          text:'取消'
+        },
+        {
+          text:'确定',
+          onPress:()=>{
+            (()=>{
+              deleteOrder(payload).then((res:any)=>{
+                res.success&&Toast.success('删除成功');
+                // 重新获取
+                getOrder(orderStatus);
+              }).catch((error)=>{
+                console.log(error);
+              });
+            })();
+          }
+        }
+      ]
+    );
+    console.log(payload,'删除参数');
   };
 
 
@@ -77,6 +116,9 @@ const Orders:React.FC<any> = props=>{
         mode="light"
         icon={<Icon type="left" />}
         onLeftClick={() => history.back()}
+        rightContent={[
+          <i className={`iconfont icon-shouye`} key={2} onClick={()=>{router.push('/shop/home')}}></i>
+        ]}
       >
         我的订单
       </NavBar>
@@ -89,7 +131,7 @@ const Orders:React.FC<any> = props=>{
 
             {
               orderLists.length?orderLists.map((item:any,index:number)=>(
-                <OrderCard key={index} orderInfo = {item}></OrderCard>
+                <OrderCard key={index} deleteHandler={deleteHandler} orderInfo = {item}></OrderCard>
               )):(<NoData>444</NoData>)
             }
 

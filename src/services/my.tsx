@@ -28,3 +28,8 @@ export async function deleteOrder(params:any){
     },
   },true);
 }
+
+//订单数量
+export async function queryOrderCount(params:any){
+  return request(`api/orderCount?${stringify(params)}`);
+}

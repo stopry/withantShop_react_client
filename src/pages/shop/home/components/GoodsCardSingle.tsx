@@ -17,7 +17,7 @@ const GoodsCardSingle:React.FC<Iprops> = props=>{
   const {title,des,img,_id,showCorner,isVipCard} = props;
 
   return (
-    <div className={styles.goodsCard} onClick={()=>{!isVipCard&&router.push(`/home/shop/goodsDetail/${_id}`)}}>
+    <div className={styles.goodsCard} onClick={()=>{!isVipCard&&router.push(`/shop/home/goodsDetail/${_id}`)}}>
       {showCorner?<div className={styles.cornerTip}>积分兑换</div>:null}
       <div className={styles.cardHead}>
         <div className={styles.title}>
@@ -30,7 +30,7 @@ const GoodsCardSingle:React.FC<Iprops> = props=>{
       <img className={styles.goodsImg} src={img} alt=""/>
 
     </div>
-    
+
   )
 }
 
