@@ -1,10 +1,11 @@
 import React from 'react';
 const styles = require('./styles.less');
+import router from 'umi/router';
 
 const ArticleItem:React.FC<any> = props=>{
   
   return(
-    <div className={styles.articleItem}>
+    <div className={styles.articleItem} onClick={()=>{router.push('/shop/discover/article/1')}}>
       <img className={styles.articleBg} src={ require('@/assets/shop/goods_img_single.jpg')} alt=""/>
       <div className={styles.articleDesc}>
         <h3>

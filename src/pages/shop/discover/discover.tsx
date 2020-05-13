@@ -28,7 +28,7 @@ const Disvover:React.FC<any> = props=>{
         <ul>
           {
             [1,1,1].map((item,index)=>(
-              <ArticleItem key={index}></ArticleItem>
+              <ArticleItem  key={index}></ArticleItem>
             ))
           }
         </ul>
