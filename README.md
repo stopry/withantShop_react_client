@@ -103,17 +103,20 @@ $ yarn build or npm run build
 # 部分截图
 
 ### 首页
-<img src="http://qny.stopry.com/home_t.png" width="365" height="auto"/> <img src="http://qny.stopry.com/home_b.png" width="365" height="auto"/>
+<img src="http://qny.stopry.com/home_t.png" width="365" height="auto"/> 
+<img src="http://qny.stopry.com/home_b.png" width="365" height="auto"/>
 <br/>
 ### 收货地址 订单
-<img src="http://qny.
-stopry.com/page_address_list.png" width="365" height="auto"/> <img src="http://qny.stopry.com/order_lisr.png" width="365" height="auto"/>
+<img src="http://qny.stopry.com/page_address_list.png" width="365" height="auto"/> 
+<img src="http://qny.stopry.com/order_lisr.png" width="365" height="auto"/>
 <br/>
 ### 商品列表详情
-<img src="http://qny.stopry.com/goods_list.png" width="365" height="auto"/> <img src="http://qny.stopry.com/goods_detail.png" width="365" height="auto"/>
+<img src="http://qny.stopry.com/goods_list.png" width="365" height="auto"/> 
+<img src="http://qny.stopry.com/goods_detail.png" width="365" height="auto"/>
 <br/>
 ### 文章列表详情
-<img src="http://qny.stopry.com/page_discover.png" width="365" height="auto"/> <img src="http://qny.stopry.com/dis_detail.png" width="365" height="auto"/>
+<img src="http://qny.stopry.com/page_discover.png" width="365" height="auto"/> 
+<img src="http://qny.stopry.com/dis_detail.png" width="365" height="auto"/>
 <br/>
 ### 个人中心
 <img src="http://qny.stopry.com/page_my.png" width="365" height="auto"/>
