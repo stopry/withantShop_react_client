@@ -95,3 +95,13 @@ $ yarn build or npm run build
 
 
 # 部分截图
+
+<img src="http://qny.stopry.com/home_t.png" width="365" height="auto"/> <img src="http://qny.stopry.com/home_b.png" width="365" height="auto"/>
+<br/>
+<img src="http://qny.stopry.com/address_list.png" width="365" height="auto"/> <img src="http://qny.stopry.com/order_lisr.png" width="365" height="auto"/>
+<br/>
+<img src="http://qny.stopry.com/goods_list.png" width="365" height="auto"/> <img src="http://qny.stopry.com/goods_detail.png" width="365" height="auto"/>
+<br/>
+<img src="http://qny.stopry.com/page_discover.png" width="365" height="auto"/> <img src="http://qny.stopry.com/dis_detail.png" width="365" height="auto"/>
+<br/>
+<img src="http://qny.stopry.com/page_my.png" width="365" height="auto"/>
