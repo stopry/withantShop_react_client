@@ -107,7 +107,7 @@ $ yarn build or npm run build
 <br/>
 ### 收货地址 订单
 <img src="http://qny.
-stopry.com/address_list.png" width="365" height="auto"/> <img src="http://qny.stopry.com/order_lisr.png" width="365" height="auto"/>
+stopry.com/page_address_list.png" width="365" height="auto"/> <img src="http://qny.stopry.com/order_lisr.png" width="365" height="auto"/>
 <br/>
 ### 商品列表详情
 <img src="http://qny.stopry.com/goods_list.png" width="365" height="auto"/> <img src="http://qny.stopry.com/goods_detail.png" width="365" height="auto"/>
