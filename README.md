@@ -1,10 +1,10 @@
 # 前言
 
-学React已经有一段时间了，期间都是接触到的都是些概念性的东西和一些简单的demo示例。想要更加熟悉框架以及能够安全的运用在项目中，还需要真正的实战练习，无意中看到支付宝小程序中有一个withAnt商店小程序，于是就用刚学的Umi,React,Antd-mobile照着写了起来。
-
-项目中涉及到用户登陆，jwt token验证，商品列表，商品详情，用户信息，商品下单，订单，收货地址等。。。,并对webpack做了一些必要的优化配置。
+学React已经有一段时间了，期间都是接触到的都是些概念性的东西和一些简单的demo示例。想要更加熟悉框架以及能够安全的运用在项目中，还需要真正的实战练习，无意中看到支付宝withAnt商店小程序，于是就用刚学的Umi,React,Antd-mobile照着写了起来。
 
 项目都是在利用业余时间写的，仅仅用于学习使用。
+
+项目中涉及到用户登陆，jwt token验证，商品列表，商品详情，用户信息，商品下单，订单，收货地址等。。。,并对webpack做了一些必要的优化配置。
 
 此项目为用户客户端，另外有基于Umi React Antd的后台数据管理界面和基于node egg mongodb的服务端系统，此客户端和后台管理界面需要结合服务端使用，否出会出现找不到数据的异常。
 
@@ -30,8 +30,12 @@ __项目源码基于 GPL 协议，仅仅用于 Umi React 框架的学习，请�
 
 
 ## 技术栈
-
-react + umi + dva + antd-mobile + postcss + ES6/7 + typeScript + mock
+- 框架：React,Umi,Dva
+- 组件库：antd-mobile
+- 开发语言：TypeScript
+- Ajax 库：Dva fetch
+- 样式：Less
+- 界面适配：postcss
 
 
 ## 目录结构
@@ -98,12 +102,18 @@ $ yarn build or npm run build
 
 # 部分截图
 
+### 首页
 <img src="http://qny.stopry.com/home_t.png" width="365" height="auto"/> <img src="http://qny.stopry.com/home_b.png" width="365" height="auto"/>
 <br/>
-<img src="http://qny.stopry.com/address_list.png" width="365" height="auto"/> <img src="http://qny.stopry.com/order_lisr.png" width="365" height="auto"/>
+### 收货地址 订单
+<img src="http://qny.
+stopry.com/address_list.png" width="365" height="auto"/> <img src="http://qny.stopry.com/order_lisr.png" width="365" height="auto"/>
 <br/>
+### 商品列表详情
 <img src="http://qny.stopry.com/goods_list.png" width="365" height="auto"/> <img src="http://qny.stopry.com/goods_detail.png" width="365" height="auto"/>
 <br/>
+### 文章列表详情
 <img src="http://qny.stopry.com/page_discover.png" width="365" height="auto"/> <img src="http://qny.stopry.com/dis_detail.png" width="365" height="auto"/>
 <br/>
+### 个人中心
 <img src="http://qny.stopry.com/page_my.png" width="365" height="auto"/>
