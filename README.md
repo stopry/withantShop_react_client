@@ -75,7 +75,7 @@ $ cd my-project
 $ yarn or npm install
 
 // 运行
-$ yarn start or npm run start # 访问 http://localhost:8080
+$ yarn start or npm run start # 访问 http://localhost:8066
 
 // 打包
 $ yarn build or npm run build
@@ -86,13 +86,13 @@ $ yarn build or npm run build
 
 # 说明
 
->  如果对您有帮助，您可以点右上角 "Star" 支持一下 谢谢！ ^_^
+>  如果对您有帮助，您可以点右上角 "Star" 支持一下 谢谢！ ☺
 
 >  或者您可以 "follow" 一下，我会不断开源更多的有趣的项目
 
 >  开发环境 windows10 64位 Chrome 73.0.3683.86  nodejs 10.19.0  npm 6.14.2
 
->  本项目会不定期更新完善 @auther 80974651@qq.com
+>  本项目会不定期更新完善 @auther 809746561@qq.com
 
 
 
