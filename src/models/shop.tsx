@@ -3,7 +3,6 @@ import { queryBanner,queryGoods,queryRecomGoods,userLogin,createOrder } from '@/
 import { Toast } from 'antd-mobile';
 import { routerRedux } from 'dva/router';
 import LS from 'parsec-ls';
-import {createOrder} from "@/services/my";
 
 
 export default {

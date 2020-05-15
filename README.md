@@ -1,14 +1,36 @@
-# umi-dva-antd-mobile
-[![Build With Umi](https://img.shields.io/badge/build%20with-umi-028fe4.svg?style=flat-square)](http://umijs.org/)
-[![Build With dva](https://img.shields.io/badge/build%20with-dva-028fe4.svg?style=flat-square)](https://dvajs.com/)
-[![Build With antd-mobile](https://img.shields.io/badge/build-antd--mobile-green.svg)](https://mobile.ant.design)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]()
+# 前言
+
+学React已经有一段时间了，期间都是接触到的都是些概念性的东西和一些简单的demo示例。想要更加熟悉框架以及能够安全的运用在项目中，还需要真正的实战练习，无意中看到支付宝小程序中有一个withAnt商店小程序，于是就用刚学的Umi,React,Antd-mobile照着写了起来。
+
+项目中涉及到用户登陆，jwt token验证，商品列表，商品详情，用户信息，商品下单，订单，收货地址等。。。,并对webpack做了一些必要的优化配置。
+
+项目都是在利用业余时间写的，仅仅用于学习使用。
+
+此项目为用户客户端，另外有基于Umi React Antd的后台数据管理界面和基于node egg mongodb的服务端系统，此客户端和后台管理界面需要结合服务端使用，否出会出现找不到数据的异常。
+
+>[[服务端项目传送地址]](https://github.com/stopry/WithAntShop_Server_egg.git)<br/>
+[[后台管理页面传送地址]](https://github.com/stopry/WithAntShop_AdminClient_React.git)
+
+__<font color='#ff7875'>注：本项目主要用户学习目的，因此包含了一些和之前写的其他无关的代码（包括一个投票相关的和仿别人的考试答题的demo，具体可看项目目录和路由配置），商店项目代码主要在shop目录下以及其他的一些带有shop字样的代码如models下的shop.tsx。</font>__
+
+# Umi React WithAntShop
+
+
+## 框架文档
+
+>[[Build With Umi]](http://umijs.org/)<br/>
+[[Build With dva]](https://dvajs.com/)<br/>
+[[Build With antd-mobile]](https://mobile.ant.design)<br/>
 
 该项目主要以 [UMI](https://umijs.org/zh/) + [DVA](https://dvajs.com/) 为底层框架，以[Ant Design Mobile](https://mobile.ant.design/)为 UI 组件库，包含完整的前端工程化实践。
 
 部分代码及功能参考于 [Ant Design pro](https://pro.ant.design/)
 
-:clap: 已经支持微信开发，相见 [wx](https://github.com/hqwlkj/umi-dva-antd-mobile/tree/wx) 分支。
+
+## 技术栈
+
+react + umi + dva + antd-mobile + postcss + ES6/7 + typeScript + mock
+
 
 ## 目录结构
 
@@ -43,7 +65,7 @@
 ```javascript
 
 // 安装项目
-$ git clone --depth=1 https://github.com/hqwlkj/umi-dva-antd-mobile.git my-project
+$ git clone --depth=1 https://github.com/stopry/withantShop_react_client.git my-project
 
 $ cd my-project
 
@@ -59,43 +81,17 @@ $ yarn build or npm run build
 ```
 更多命令可在[package.json](./package.json)中查看
 
-## 线上项目预览地址
-DEMO 地址已经全部提供到 [Issue](https://github.com/hqwlkj/umi-dva-antd-mobile/issues) 中👏👏👏
 
-1、[蔚来汽车H5活动](https://h5.parsec.com.cn/weilai/) 建议在手机浏览器或者微信浏览器预览。
+# 说明
 
-2、[H5 DEMO](https://h5.parsec.com.cn/weilai/demo) 建议在手机浏览器或者微信浏览器预览。
+>  如果对您有帮助，您可以点右上角 "Star" 支持一下 谢谢！ ^_^
 
-3、[抽奖大转盘 DEMO](https://h5.parsec.com.cn/turntable_demo) 建议在手机浏览器或者微信浏览器预览。
+>  或者您可以 "follow" 一下，我会不断开源更多的有趣的项目
 
-> *注 由于 `DEMO` 代码是从正式项目中提取的，没有放在 `examples` 目录下；有需要的同学，请在 [Issue](https://github.com/hqwlkj/umi-dva-antd-mobile/issues) 中索要，看见消息后我会及时提供，谢谢各位同学的 :star: :star2: :dizzy:
+>  开发环境 windows10 64位 Chrome 73.0.3683.86  nodejs 10.19.0  npm 6.14.2
 
-
-## DEMO
-请扫描下方二维码预览效果。
-
-由于demo服务器当前不稳定，建议本地运行查看效果，谢谢
-
- ![](https://github.com/hqwlkj/umi-dva-antd-mobile/blob/master/qrcode/h5.png) | 
-![](https://github.com/hqwlkj/umi-dva-antd-mobile/blob/master/qrcode/h5.png) 
- :---: | :---: 
- H5 应用(已完成) | APP 应用 
- 
-> demo 还在持续完善中。。。
-
-## 支持环境
+>  本项目会不定期更新完善 @auther 80974651@qq.com
 
 
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="iOS Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br> iOS Safari | [<img src="https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=356c6916013387449cc5287a6934bec4/d53f8794a4c27d1e11530c8216d5ad6eddc4387a.jpg" alt="Android" width="24px" height="24px" />](https://developer.android.com/)</br> Android 
-| --------- | --------- |
-| iOS Safari | Android 4.0+ |
 
-
-## 参与贡献
-
-我们非常欢迎你的贡献，你可以通过以下方式和我一起共建 :smiley:：
-
-- 通过 [Issue](https://github.com/hqwlkj/umi-dva-antd-mobile/issues) 报告 bug 或进行咨询。
-- 提交 [Pull Request](https://github.com/hqwlkj/umi-dva-antd-mobile/pulls) 改进代码。
-
-
+# 部分截图

@@ -88,7 +88,7 @@ export default {
       },
       target: 'https://games.parsec.com.cn/',
     },
-    '/api':{
+    '/api':{//node 服务端反向代理配置
       changeOrigin: true,
       target: 'http://localhost:7001',
     }

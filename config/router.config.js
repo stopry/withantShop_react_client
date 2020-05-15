@@ -1,4 +1,5 @@
 export default [
+  //仿withAnt商店
   {
     path: '/shop',
     component: '../layouts/ShopLayout',
@@ -68,7 +69,7 @@ export default [
       },
     ],
   },
-  //vote
+  //投票
   {
     path: '/vote',
     component: '../layouts/VoteLayout',
@@ -146,7 +147,7 @@ export default [
         iconName: 'my',
       },
     ],
-  }, // H5
+  }, // 考试答题
   {
     path: '/',
     component: '../layouts/BasicLayout',
@@ -163,6 +164,7 @@ export default [
       },
       {
         path: '/',
+        redirect: '/shop/home',
         component: './home/index',
         title: '首页',
       },
