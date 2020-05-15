@@ -17,6 +17,7 @@
 # production
 /dist
 /qrcode
+/.vs
 
 # misc
 .DS_Store
